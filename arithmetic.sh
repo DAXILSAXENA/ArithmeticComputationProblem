@@ -26,3 +26,12 @@ result['compute1']=$compute1
 result['compute2']=$compute2
 result['compute3']=$compute3
 result['compute4']=$compute4
+
+count=0
+for key in ${!result[*]}
+do
+        temp=${result[$key]}
+        res[((count++))]=$temp
+done
+
+echo ${res[*]}
