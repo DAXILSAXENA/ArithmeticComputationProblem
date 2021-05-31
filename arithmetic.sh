@@ -11,3 +11,6 @@ echo "Numbers you entered are:" $a $b $c
 compute1=$( echo $a $b $c | awk '{print $1+$2*$3}' )
 echo $a+$b*$c = $compute1
 
+compute2=$( echo $a $b $c | awk '{print $1*$2+$3}' )
+echo $a*$b+$c = $compute2
+
